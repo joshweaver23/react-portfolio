@@ -16,6 +16,11 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
         })
+			},
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: 'babel-loader'
 			}
 		]
 	},
@@ -23,8 +28,7 @@ module.exports = {
 		contentBase: path.join(__dirname, "dist"),
   	compress: true,
  		port: 9000,
-		stats: 'errors-only',
-		open: true
+		stats: 'errors-only'
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
