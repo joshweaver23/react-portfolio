@@ -1,7 +1,7 @@
 {
-  "name": "react-portfolio",
+  "name": "react-practice",
   "version": "1.0.0",
-  "description": "Josh Weaver Portfolio",
+  "description": "React Practice App",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshweaver23/react-portfolio.git"
+    "url": "git+https://github.com/joshweaver23/react-practice.git"
   },
   "keywords": [
     "front-end",
@@ -22,9 +22,9 @@
   "author": "Josh Weaver",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joshweaver23/react-portfolio/issues"
+    "url": "https://github.com/joshweaver23/react-practice/issues"
   },
-  "homepage": "https://github.com/joshweaver23/react-portfolio#readme",
+  "homepage": "https://github.com/joshweaver23/react-practice#readme",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.25.0",
@@ -55,5 +55,7 @@
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
 }

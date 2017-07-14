@@ -15,7 +15,7 @@ let cssProd = ExtractTextPlugin.extract({
 
 module.exports = {
 	entry: {
-		app: './src/app.js',
+		app: './src/index.js',
 		bootstrap: isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev,
 	},
 	output: {
@@ -44,19 +44,19 @@ module.exports = {
     	// { test: /\.(ttf|eot)$/, loader: 'file-loader?name=fonts/[name].[ext]' },
 			{ test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports-loader?jQuery=jquery' },
 			{ test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?&name=fonts/[name].[ext]" }
+      		{ test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?&name=fonts/[name].[ext]" }
 		]
 	},
 	devServer: {
 		contentBase: path.join(__dirname, "dist"),
-  	compress: true,
+  		compress: true,
 		hot: true,
- 		port: 9000,
+ 		port: 3000,
 		stats: 'errors-only'
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Josh Weaver Portfolio',
+			title: 'React Practice',
 			minify: {
 				collapseWhitespace: true
 			},
