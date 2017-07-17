@@ -4,8 +4,8 @@
   "description": "React Practice App",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "dist": "npm run prod",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server",
     "prod": "npm run clean && webpack -p",
     "clean": "rimraf ./dist/*"

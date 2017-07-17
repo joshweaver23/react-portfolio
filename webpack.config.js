@@ -64,7 +64,7 @@ module.exports = {
 			excludeChunks: ['contact'],
 			template: './src/index.html'
 		}),
-		new ExtractTextPlugin('/styles/[name].css'),
+		new ExtractTextPlugin('[name].css'),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin()
 	]
