@@ -1,4 +1,32 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-html > body {}
+html > body {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	background-color: #ccc;
+}
+
+header {
+	img {
+		display: block;
+		margin: 20px auto 0;
+		max-height: 75px;
+	}
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 2px;
+	margin: 30px 0;
+	padding: 20px;
+
+	.message {
+		text-align: center;
+	}
+
+	.btn-default {
+		background-color: rgba(122, 186, 255, 0.7);
+	}
+}
